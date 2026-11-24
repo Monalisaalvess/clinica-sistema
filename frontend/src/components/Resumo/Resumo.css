@@ -1,0 +1,24 @@
+.resumo { 
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+     gap: 1.5rem;
+     padding: 3rem clamp(1.5rem, 6vw, 5rem) 0;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+.resumo div { 
+     border-top: 1px solid var(--ouro);
+     padding-top: .8rem;
+ }
+
+.resumo strong { display: block;
+     font-family: var(--serif);
+     font-weight: 300;
+     font-size: 3rem;
+     line-height: 1;
+ }
+
+.resumo span { 
+     color: var(--suave);
+ }

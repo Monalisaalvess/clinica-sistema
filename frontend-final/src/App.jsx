@@ -28,7 +28,7 @@ export default function App() {
   return (
     <>
       <header className={'topo' + (view === 'home' ? ' topo-escuro' : '')}>
-        <button className="marca" onClick={() => setView(user ? 'painel' : 'home')}>Áurea</button>
+        <button className="marca" onClick={() => setView(user ? 'painel' : 'home')}>Revita </button>
         <nav>
           {user ? (
             <>
@@ -54,7 +54,7 @@ function Home({ onAgendar }) {
   return (
     <main>
       <section className="hero">
-        <h1>Medicina feita com tempo, silêncio e atenção.</h1>
+        <h1>Transformando limitações em novas possibilidades.</h1>
         <p>Consultas sem pressa, com especialistas que conhecem a sua história.</p>
         <button className="btn btn-ouro" onClick={onAgendar}>Agendar consulta</button>
       </section>

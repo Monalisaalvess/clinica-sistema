@@ -1,0 +1,31 @@
+.painel { display: grid; grid-template-columns: 1.5fr 1fr; gap: clamp(2rem, 5vw, 5rem); padding: clamp(2rem, 6vw, 5rem); max-width: 1200px; margin: 0 auto; align-items: start; }
+
+.painel h2 { font-size: 2.4rem; margin-bottom: 1.5rem; }
+
+.consultas { list-style: none; padding: 0; }
+
+.consultas li { display: flex; justify-content: space-between; gap: 1rem; align-items: center; padding: 1.3rem 0; border-top: 1px solid var(--pedra); }
+
+.consultas li div { display: flex; flex-direction: column; }
+
+.consultas strong { font-family: var(--serif); font-weight: 400; font-size: 1.4rem; }
+
+.consultas span, .consultas em, .vazio { color: var(--suave); }
+
+.consultas .inativa { opacity: .55; }
+
+.lateral { background: var(--verde); color: var(--perola); padding: 2.5rem; }
+
+.lateral label { color: #aab4ad; }
+
+.lateral select option { color: #000; }
+
+.lateral input, .lateral select { border-color: #5d6d64; }
+
+.lateral input[type="datetime-local"] { color-scheme: dark; }
+
+.acoes { display: flex; gap: 1.2rem; }
+
+@media (max-width: 800px) {
+  .painel { grid-template-columns: 1fr; }
+}

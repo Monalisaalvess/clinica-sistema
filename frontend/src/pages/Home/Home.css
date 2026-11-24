@@ -1,0 +1,76 @@
+.hero { 
+   background: var(--verde); 
+   color: var(--perola); 
+   min-height: 78vh;
+   padding: clamp(4rem, 12vh, 9rem) clamp(1.5rem, 6vw, 5rem);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 2rem;
+   animation: surgir 1.4s ease both; 
+  }
+
+.hero h1 { 
+  font-size: clamp(3rem, 6vw, 5rem); 
+  max-width: 25ch; 
+}
+
+.hero p { 
+   max-width: 42ch;
+   font-size: 1.25rem;
+   color: #c9d1cb; }
+
+@keyframes surgir { 
+  from { opacity: 0; } 
+  to   { opacity: 1; } 
+}
+
+.servicos { 
+  padding: clamp(4rem, 10vh, 7rem) clamp(1.5rem, 6vw, 5rem); 
+  max-width: 1100px; 
+  margin: 0 auto; 
+}
+
+.servicos h2 { 
+  font-size: 2.6rem; 
+  margin-bottom: 2.5rem; 
+}
+
+.servicos ul { 
+  list-style: none; 
+  padding: 0; }
+
+.servicos li { 
+  display: grid; 
+  grid-template-columns: 1fr 1.4fr; 
+  gap: 2rem;
+  padding: 1.8rem 0;
+  border-top: 1px solid var(--pedra);
+ }
+
+.servicos li:last-child { 
+  border-bottom: 1px solid var(--pedra);
+ }
+
+.servicos h3 { 
+  font-size: 1.9rem;
+ }
+
+.servicos p { 
+  color: var(--suave);
+ }
+
+.rodape { 
+   text-align: center;
+   padding: 2.8rem;
+   color: var(--suave);
+   font-family: var(--serif);
+   letter-spacing: .14em; 
+  }
+
+@media (prefers-reduced-motion: reduce) { .hero { animation: none; } }
+
+@media (max-width: 800px) {
+  .servicos li { grid-template-columns: 1fr; gap: .5rem; }
+}

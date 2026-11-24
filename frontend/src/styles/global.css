@@ -1,0 +1,47 @@
+:root {
+  --verde: #12261f; --verde-2: #1b362d; --perola: #f2f3f0; --pedra: #d9ddd6;
+  --ouro: #b39765; --texto: #1c2622; --suave: #6b766f; --erro: #9b3a32;
+  --serif: 'Cormorant', Georgia, serif; --sans: 'Jost', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; }
+
+body { font-family: var(--sans); font-weight: 300; background: var(--perola); color: var(--texto); line-height: 1.6; }
+
+button { font: inherit; cursor: pointer; background: none; border: 0; color: inherit; }
+
+a { color: inherit; text-decoration: none; }
+
+:focus-visible { outline: 2px solid var(--ouro); outline-offset: 3px; }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 300; line-height: 1.1; }
+
+.link { color: var(--ouro); border-bottom: 1px solid transparent; transition: border-color .2s; }
+
+.link:hover { border-color: var(--ouro); }
+
+.btn { padding: .95rem 2.2rem; letter-spacing: .04em; transition: background .25s, color .25s; }
+
+.btn-ouro { border: 1px solid var(--ouro); color: var(--ouro); }
+
+.btn-ouro:hover { background: var(--ouro); color: var(--verde); }
+
+.btn-escuro { background: var(--verde); color: var(--perola); }
+
+.btn-escuro:hover { background: var(--verde-2); }
+
+.btn:disabled { opacity: .5; }
+
+form { display: flex; flex-direction: column; gap: 1.2rem; }
+
+form h2 { font-size: 2.4rem; }
+
+label { display: flex; flex-direction: column; gap: .35rem; font-size: .9rem; color: var(--suave); }
+
+input, select { font: inherit; font-weight: 300; padding: .7rem 0; background: transparent; border: 0; border-bottom: 1px solid var(--suave); color: inherit; border-radius: 0; }
+
+input:focus, select:focus { outline: none; border-color: var(--ouro); }
+
+.erro { color: var(--erro); font-size: .9rem; }
+
+.ok { color: var(--ouro); }

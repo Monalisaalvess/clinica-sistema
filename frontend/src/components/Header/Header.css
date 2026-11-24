@@ -1,0 +1,32 @@
+.topo { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1.5rem clamp(1.5rem, 6vw, 5rem); 
+    border-bottom: 1px solid var(--pedra); 
+}
+
+.topo-escuro { 
+    background: var(--verde); 
+    color: var(--perola); 
+    border-color: transparent; 
+}
+
+.marca { 
+    font-family: var(--serif); 
+    font-size: 2.5rem; 
+    letter-spacing: .14em; 
+}
+
+.topo nav { 
+    display: flex; 
+    gap: 1.5rem; 
+    align-items: center; 
+}
+
+.saudacao { 
+    color: var(--suave); 
+}
+.btn-logout{
+    font-size:1rem;
+}

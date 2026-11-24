@@ -1,0 +1,17 @@
+.abas { 
+    display: flex;
+    gap: 2rem;
+    padding: 1.2rem clamp(1.5rem, 6vw, 5rem) 0;
+    border-bottom: 1px solid var(--pedra);
+}
+
+.abas a { 
+    padding: .8rem 0;
+    color: var(--suave);
+    border-bottom: 2px solid transparent;
+}
+
+.abas a.ativa { 
+    color: var(--texto);
+    border-color: var(--ouro);
+}

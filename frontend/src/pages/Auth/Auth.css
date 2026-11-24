@@ -1,0 +1,10 @@
+.centro { 
+    min-height: 80vh; 
+    display: grid; 
+    place-items: center; 
+    padding: 3rem 1.5rem; 
+}
+
+.painel-form { 
+    width: min(100%, 26rem); 
+}
